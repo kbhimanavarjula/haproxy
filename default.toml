@@ -1,0 +1,15 @@
+maxconn = 32
+httpchk = "GET /"
+
+[front-end]
+listen = "*"
+port = 9000
+mode = "http"
+
+[status]
+enabled = true
+listen = "*"
+port = 9000
+user = "adminuser"
+password = "Password@1234"
+uri = "/haproxy-stats"
